@@ -14,15 +14,15 @@ $sLangName = 'Deutsch';
 $aLang     = array(
     'charset'                                   => 'UTF-8',
 
-    'PSWDF_SUBJECT'                             => 'Wideruf',
-    'PSWDF_TITLE'                               => 'Widerufsformular',
+    'PSWDF_SUBJECT'                             => 'Widerruf',
+    'PSWDF_TITLE'                               => 'Widerrufsformular',
     'PSWDF_MSG1'                                => 'Wenn Sie den Kaufvertrag widerrufen m&ouml;chten, dann f&uuml;llen Sie bitte folgendes Formular vollst&auml;ndig aus.',
     'PSWDF_MSG2'                                => 'Hiermit widerrufe(n) ich/wir den von mir/uns abgeschlossenen Vertrag &uuml;ber den Kauf der folgenden Artikel.',
-    'PSWDF_MSG3'                                => 'Informationen zu unserem Widerufsrecht finden Sie',
+    'PSWDF_MSG3'                                => 'Informationen zu unserem Widerrufsrecht finden Sie',
     'PSWDF_MSG4'                                => 'an dieser Stelle',
     'PSWDF_MSG5'                                => '.',
     'PSWDF_TO'                                  => 'Empf&auml;nger:<br><br><br>',
-    'PSWDF_SEND'                                => 'Wideruf absenden',
+    'PSWDF_SEND'                                => 'Widerruf absenden',
     'PSWDF_ORDERNR'                             => 'Bestellnummer:',
     'PSWDF_DATE_ORDER'                          => 'bestellt am:',
     'PSWDF_DATE_RECEIVED'                       => 'erhalten am:',
@@ -30,6 +30,6 @@ $aLang     = array(
     'PSWDF_NAME'                                => 'Name:',
     'PSWDF_ADDRESS'                             => 'Anschrift:',
     'PSWDF_EMAIL'                               => 'eMail-Adresse:',
-    'PSWDF_DATE_DRAWAL'                         => 'Datum des Widerufs:',
+    'PSWDF_DATE_DRAWAL'                         => 'Datum des Widerrufs:',
     'PSWDF_MSG_RECEIVED'                        => '<span style="color: green;"><b>Wir haben Ihren Widerruf erhalten und werden uns mit Ihnen in Verbindung setzen.</b></span>',
 );
