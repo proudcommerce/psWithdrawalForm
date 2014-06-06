@@ -8,7 +8,8 @@ Free Module for OXID eShop.
 Installation
 
 	1. copy content from copy_this folder into your shop root
-	4. activate module psWithdrawalForm in shop admin
+	2. activate module psWithdrawalForm in shop admin
+	3. open form at yourshop.tld/?cl=psWithdrawalForm
 
 
 SEO-URL
