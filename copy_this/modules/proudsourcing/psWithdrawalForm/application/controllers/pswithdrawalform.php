@@ -8,7 +8,7 @@
  * @copyright (c) Proud Sourcing GmbH | 2014
  * @link www.proudcommerce.com
  * @package psWithdrawalForm
- * @version 1.0.0
+ * @version 1.1.0
  **/
 class psWithdrawalForm extends oxUBase
 {
@@ -91,7 +91,11 @@ class psWithdrawalForm extends oxUBase
                      $oLang->translateString( 'PSWDF_DATE_DRAWAL' )." ".$aParams['pswdf_drawaldate'];
 
         $oEmail = oxNew( 'oxemail' );
-        if ( $oEmail->sendContactMail( $aParams['mailto'], $oLang->translateString( 'PSWDF_SUBJECT' )." ".$aParams['pswdf_name']." (#".$aParams['pswdf_ordernr'].")", $sMessage ) )
+        $blSendToOwner = $oEmail->sendContactMail( $aParams['mailto'], $oLang->translateString( 'PSWDF_SUBJECT' )." ".$aParams['pswdf_name']." (#".$aParams['pswdf_ordernr'].")", $sMessage );
+        $oEmail = oxNew( 'oxemail' );
+        $blSendToCustomer = $oEmail->sendContactMail( $aParams['pswdf_email'], $oLang->translateString( 'PSWDF_SUBJECT_CUSTOMER' )." ".$aParams['pswdf_name']." (#".$aParams['pswdf_ordernr'].")", $sMessage );
+        
+        if ( $blSendToOwner &&  $blSendToCustomer )
         {
             $this->_blDrawalFormSendStatus = 1;
         }

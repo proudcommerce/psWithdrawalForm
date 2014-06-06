@@ -8,13 +8,14 @@
  * @copyright (c) Proud Sourcing GmbH | 2014
  * @link www.proudcommerce.com
  * @package psWithdrawalForm
- * @version 1.0.0
+ * @version 1.1.0
  **/
 $sLangName = 'Deutsch';
 $aLang     = array(
     'charset'                                   => 'UTF-8',
 
     'PSWDF_SUBJECT'                             => 'Widerruf',
+    'PSWDF_SUBJECT_CUSTOMER'                    => 'Eingangsbestaetigung Widerruf',
     'PSWDF_TITLE'                               => 'Widerrufsformular',
     'PSWDF_MSG1'                                => 'Wenn Sie den Kaufvertrag widerrufen m&ouml;chten, dann f&uuml;llen Sie bitte folgendes Formular vollst&auml;ndig aus.',
     'PSWDF_MSG2'                                => 'Hiermit widerrufe(n) ich/wir den von mir/uns abgeschlossenen Vertrag &uuml;ber den Kauf der folgenden Artikel.',
@@ -31,5 +32,5 @@ $aLang     = array(
     'PSWDF_ADDRESS'                             => 'Anschrift:',
     'PSWDF_EMAIL'                               => 'eMail-Adresse:',
     'PSWDF_DATE_DRAWAL'                         => 'Datum des Widerrufs:',
-    'PSWDF_MSG_RECEIVED'                        => '<span style="color: green;"><b>Wir haben Ihren Widerruf erhalten und werden uns mit Ihnen in Verbindung setzen.</b></span>',
+    'PSWDF_MSG_RECEIVED'                        => '<span style="color: green;"><b>Wir haben Ihren Widerruf erhalten und senden Ihnen per eMail eine Best&auml;tigung.</b></span>',
 );
