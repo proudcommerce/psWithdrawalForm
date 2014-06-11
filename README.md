@@ -36,6 +36,7 @@ Changelog
 
 	1.0.0 - Module release
 	1.1.0 - Add email notification for customer
+	1.1.1 - Fix email notification for customer
 	
 	
 License
