@@ -8,7 +8,7 @@
  * @copyright (c) Proud Sourcing GmbH | 2014
  * @link www.proudcommerce.com
  * @package psWithdrawalForm
- * @version 1.1.1
+ * @version 1.1.2
  **/
 class psWithdrawalForm extends oxUBase
 {
