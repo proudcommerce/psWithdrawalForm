@@ -38,6 +38,7 @@ Changelog
 	1.1.0 - Add email notification for customer
 	1.1.1 - Fix email notification for customer
 	1.1.2 - Fix translation special chars email body
+	1.1.3 - Support for OXID 4.9
 	
 	
 License
