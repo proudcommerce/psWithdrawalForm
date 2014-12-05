@@ -15,7 +15,7 @@ $aModule = array(
         'en' => 'Form for handling returns (withdrawal) of orders.'
     ),
     'thumbnail'    => 'logo-ps.jpg',
-    'version'      => '1.1.2',
+    'version'      => '1.1.3',
     'author'       => 'Proud Sourcing GmbH',
     'url'          => 'http://www.proudcommerce.com/',
     'email'        => 'support@proudcommerce.com',
