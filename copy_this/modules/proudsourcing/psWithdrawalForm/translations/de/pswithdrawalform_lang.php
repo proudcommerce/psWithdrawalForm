@@ -8,7 +8,7 @@
  * @copyright (c) Proud Sourcing GmbH | 2014
  * @link www.proudcommerce.com
  * @package psWithdrawalForm
- * @version 1.1.2
+ * @version 1.1.3
  **/
 $sLangName = 'Deutsch';
 $aLang     = array(
