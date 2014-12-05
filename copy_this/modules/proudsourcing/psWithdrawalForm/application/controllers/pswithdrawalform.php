@@ -50,7 +50,7 @@ class psWithdrawalForm extends oxUBase
      */
     public function send()
     {
-        $aParams = oxConfig::getParameter( 'editval' );
+        $aParams = $this->getConfig()->getRequestParameter( 'editval' );
 
         // checking email address
         if ( !oxRegistry::getUtils()->isValidEmail( $aParams['pswdf_email'] ) )
@@ -60,8 +60,8 @@ class psWithdrawalForm extends oxUBase
         }
 
         // spam spider prevension
-        $sMac     = oxConfig::getParameter( 'c_mac' );
-        $sMacHash = oxConfig::getParameter( 'c_mach' );
+        $sMac     = $this->getConfig()->getRequestParameter( 'c_mac' );
+        $sMacHash = $this->getConfig()->getRequestParameter( 'c_mach' );
         $oCaptcha = $this->getCaptcha();
 
         if ( !$oCaptcha->pass( $sMac, $sMacHash ) )
@@ -71,7 +71,7 @@ class psWithdrawalForm extends oxUBase
             return false;
         }
 
-        $sSubject = oxConfig::getParameter( 'c_subject' );
+        $sSubject = $this->getConfig()->getRequestParameter( 'c_subject' );
         if ( !$aParams['pswdf_ordernr'] || !$aParams['pswdf_articles'] || !$aParams['pswdf_orderdate'] || !$aParams['pswdf_receiveddate'] || !$aParams['pswdf_name'] || !$aParams['pswdf_address'] || !$aParams['pswdf_email'] || !$aParams['pswdf_drawaldate'])
         {
             // even if there is no exception, use this as a default display method
@@ -114,7 +114,7 @@ class psWithdrawalForm extends oxUBase
     {
         if ( $this->_oUserData === null )
         {
-            $this->_oUserData = oxConfig::getParameter( 'editval' );
+            $this->_oUserData = $this->getConfig()->getRequestParameter( 'editval' );
         }
         return $this->_oUserData;
     }
