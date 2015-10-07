@@ -81,7 +81,8 @@ class psWithdrawalForm extends oxUBase
 
 		$oShop = $this->getConfig()->getActiveShop();
         $oLang = oxRegistry::getLang();
-        $sMessage  = $oLang->translateString( 'PSWDF_MSG2' ) . "\r\n\r\n" .
+        $sMessage  = $oLang->translateString( 'PSWDF_CONFIMATION_SAL' ) . "\r\n\r\n" .
+                     $oLang->translateString( 'PSWDF_CONFIMATION_TXT' ) . "\r\n\r\n" .
                      $oLang->translateString( 'PSWDF_ORDERNR' )." ".$aParams['pswdf_ordernr'] . "\r\n" .
                      $oLang->translateString( 'PSWDF_DATE_ARTICLES' )." ".$aParams['pswdf_articles'] . "\r\n" .
                      $oLang->translateString( 'PSWDF_DATE_ORDER' )." ".$aParams['pswdf_orderdate'] . "\r\n" .
@@ -89,9 +90,13 @@ class psWithdrawalForm extends oxUBase
                      $oLang->translateString( 'PSWDF_NAME' )." ".$aParams['pswdf_name'] . "\r\n" .
                      $oLang->translateString( 'PSWDF_ADDRESS' )." ".$aParams['pswdf_address'] . "\r\n" .
                      $oLang->translateString( 'PSWDF_EMAIL' )." ".$aParams['pswdf_email'] . "\r\n" .
-                     $oLang->translateString( 'PSWDF_DATE_DRAWAL' )." ".$aParams['pswdf_drawaldate']."\r\n";
+                     $oLang->translateString( 'PSWDF_DATE_DRAWAL' )." ".$aParams['pswdf_drawaldate']."\r\n\r\n" .
+                     $oLang->translateString( 'PSWDF_MSG_WHAT_NOW' ) . "\r\n\r\n" .
+                     $oLang->translateString( 'PSWDF_TO' ) . "\r\n" .
+                     $oLang->translateString( 'PSWDF_RECIPIENT_PLAIN' );
 
         $oEmail = oxNew( 'oxemail' );
+
         $blSendToOwner = $oEmail->sendEmail( $oShop->oxshops__oxorderemail->value, $oLang->translateString( 'PSWDF_SUBJECT' )." ".$aParams['pswdf_name']." (#".$aParams['pswdf_ordernr'].")", $sMessage );
         $blSendToCustomer = $oEmail->sendEmail( $aParams['pswdf_email'], $oLang->translateString( 'PSWDF_SUBJECT_CUSTOMER' )." ".$aParams['pswdf_name']." (#".$aParams['pswdf_ordernr'].")", $sMessage );
         
