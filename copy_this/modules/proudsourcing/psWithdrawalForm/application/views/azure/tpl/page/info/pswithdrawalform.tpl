@@ -29,7 +29,7 @@
                 <input type="hidden" name="mailto" value="[{ $oxcmp_shop->oxshops__oxowneremail->value }]"/>
             </div>
             <p></p>
-            <div class="col-sm-8 form clear">
+            <div class="form clear">
 
                 <div class="form-group[{if $aErrors.oxuser__oxfname}] oxInValid[{/if}]">
                     <label class="req">[{ oxmultilang ident="PSWDF_ORDERNR" }]</label>
@@ -90,6 +90,24 @@
                         [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxfname}]
                     </p>
                 </div>
+                <div class="verify">
+                    <label class="req">[{ oxmultilang ident="VERIFICATION_CODE" suffix="COLON" }]</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                        [{assign var="oCaptcha" value=$oView->getCaptcha() }]
+                        [{if $oCaptcha->isImageVisible()}]
+                            <img src="[{$oCaptcha->getImageUrl()}]" alt="">
+                        [{else}]
+                            <span class="verificationCode" id="verifyTextCode">[{$oCaptcha->getText()}]</span>
+                        [{/if}]
+                        </span>
+                        <input type="text" data-fieldsize="verify" name="c_mac" value="" class="js-oxValidate js-oxValidate_notEmpty form-control">
+                        <p class="oxValidateError" style="position:absolute;left:0;bottom:-30px;">
+                            <span class="js-oxError_notEmpty text-danger">[{ oxmultilang ident="ERROR_MESSAGE_INPUT_NOTALLFIELDS" }]</span>
+                        </p>
+                    </div>
+                </div>
+                <div>&nbsp;</div>
                 <div>&nbsp;</div>
                 <div class="form-group">
                     <label class=""><b>[{ oxmultilang ident="PSWDF_TO" }]</b></label>
@@ -98,22 +116,8 @@
                     </span>
                 </div>
                 <div>&nbsp;</div>
-                <div class="verify">
-                    <label class="req">[{ oxmultilang ident="VERIFICATION_CODE" suffix="COLON" }]</label>
-                    [{assign var="oCaptcha" value=$oView->getCaptcha() }]
-                    [{if $oCaptcha->isImageVisible()}]
-                        <img src="[{$oCaptcha->getImageUrl()}]" alt="">
-                    [{else}]
-                        <span class="verificationCode" id="verifyTextCode">[{$oCaptcha->getText()}]</span>
-                    [{/if}]
-                    <input type="text" data-fieldsize="verify" name="c_mac" value="" class="js-oxValidate js-oxValidate_notEmpty">
-                    <p class="oxValidateError">
-                        <span class="js-oxError_notEmpty text-danger">[{ oxmultilang ident="ERROR_MESSAGE_INPUT_NOTALLFIELDS" }]</span>
-                    </p>
-                </div>
-                <div>&nbsp;</div>
                 <div>
-                    <button class="btn btn-success submitButton largeButton" type="submit">[{ oxmultilang ident="PSWDF_SEND" }]</button>
+                    <button class="btn btn-primary btn-lg submitButton largeButton" type="submit">[{ oxmultilang ident="PSWDF_SEND" }]</button>
                     <p>&nbsp;</p>
                 </div>
             </div>
