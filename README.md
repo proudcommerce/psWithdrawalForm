@@ -2,7 +2,7 @@ psWithdrawalForm
 =========
 
 Form for handling returns (withdrawal) of orders.
-Free Module for OXID eShop.
+Free module for OXID eshop 4.7, 4.8, 4.9 and 4.10.
 
 
 Features
@@ -59,5 +59,5 @@ License
 
 Copyright
 
-	Proud Sourcing GmbH 2014
-	www.proudcommerce.com
+	Proud Sourcing GmbH 2016
+	www.proudcommerce.com / www.proudsourcing.de
