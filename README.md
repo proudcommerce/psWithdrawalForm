@@ -4,20 +4,19 @@ psWithdrawalForm
 Form for handling returns (withdrawal) of orders.
 Free module for OXID eshop 4.7, 4.8, 4.9 and 4.10.
 
-
 Features
 
 	Shop frontend view for withdrawal form
 	Sends email with all information to shop owner
 	Sends confirmation email to customer
 	 
-
 Installation
 
 	1. copy content from copy_this folder into your shop root
 	2. activate module psWithdrawalForm in shop admin
 	3. open form at yourshop.tld/?cl=psWithdrawalForm
 
+Tip: Use the [OXID module connector](https://github.com/OXIDprojects/OXID-Module-Connector) to install this module.
 
 SEO-URL
 
@@ -31,16 +30,14 @@ Screenshot
 ![psWithdrawalForm](https://raw.github.com/proudcommerce/psWithdrawalForm/master/psWithdrawalForm_screen_frontend.png)
 ![psWithdrawalForm](https://raw.github.com/proudcommerce/psWithdrawalForm/master/psWithdrawalForm_screen_mail.png)
 
-
 Changelog
 
-	1.0.0 - Module release
-	1.1.0 - Add email notification for customer
-	1.1.1 - Fix email notification for customer
-	1.1.2 - Fix translation special chars email body
-	1.1.3 - Support for OXID 4.9
-	
-	
+    2014-12-05  1.1.3   Support for OXID 4.9
+    2014-06-12  1.1.2   Fix translation special chars email body
+    2014-06-10  1.1.1   Fix email notification for customer
+    2014-06-06  1.1.0   Add email notification for customer
+    2014-06-05  1.0.0   Module release
+
 License
 
     This program is free software: you can redistribute it and/or modify
