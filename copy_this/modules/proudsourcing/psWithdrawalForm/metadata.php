@@ -2,7 +2,7 @@
 /**
  * Metadata version
  */
-$sMetadataVersion = '1.1';
+$sMetadataVersion = '1.2';
 
 /**
  * Module information
@@ -16,16 +16,16 @@ $aModule = array(
     ),
     'thumbnail'    => 'logo_pc-os.jpg',
     'version'      => '1.1.3',
-    'author'       => 'Proud Sourcing GmbH',
+    'author'       => 'Proud Sourcing GmbH | iFixit',
     'url'          => 'http://www.proudcommerce.com/',
     'email'        => 'support@proudcommerce.com',
     'extend'       => array(
     ),
     'files' => array(
-        'pswithdrawalform'      => 'proudsourcing/psWithdrawalForm/application/controllers/pswithdrawalform.php',
+        'pswithdrawalform'      => 'ifixit/psWithdrawalForm/application/controllers/pswithdrawalform.php',
     ),
     'templates' => array(
-        'pswithdrawalform.tpl'  => 'proudsourcing/psWithdrawalForm/application/views/azure/tpl/page/info/pswithdrawalform.tpl',
+        'pswithdrawalform.tpl'  => 'ifixit/psWithdrawalForm/application/views/azure/tpl/page/info/pswithdrawalform.tpl',
     ),
     'blocks' => array(
 
