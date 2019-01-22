@@ -25,7 +25,11 @@ $aModule = array(
         'pswithdrawalform'      => 'proudsourcing/psWithdrawalForm/application/controllers/pswithdrawalform.php',
     ),
     'templates' => array(
-        'pswithdrawalform.tpl'  => 'proudsourcing/psWithdrawalForm/application/views/azure/tpl/page/info/pswithdrawalform.tpl',
+        //for Azure Theme
+        //'pswithdrawalform.tpl'  => 'proudsourcing/psWithdrawalForm/application/views/azure/tpl/page/info/pswithdrawalform.tpl',
+        // for Flow Theme
+        'pswithdrawalform.tpl'  => 'proudsourcing/psWithdrawalForm/application/views/flow/tpl/page/info/pswithdrawalform.tpl',
+
     ),
     'blocks' => array(
 
