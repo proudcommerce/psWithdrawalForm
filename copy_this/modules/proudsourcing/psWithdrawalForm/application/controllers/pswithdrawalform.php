@@ -128,7 +128,7 @@ class psWithdrawalForm extends oxUBase
     {
         if ( $this->_oCaptcha === null )
         {
-            $this->_oCaptcha = oxNew('oeCaptcha');
+            $this->_oCaptcha = oxNew('oxCaptcha');
         }
         return $this->_oCaptcha;
     }
