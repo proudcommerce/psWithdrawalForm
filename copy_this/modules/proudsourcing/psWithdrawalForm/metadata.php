@@ -26,9 +26,9 @@ $aModule = array(
     ),
     'templates' => array(
         //for Azure Theme
-        'pswithdrawalform.tpl'  => 'proudsourcing/psWithdrawalForm/application/views/azure/tpl/page/info/pswithdrawalform.tpl',
-        //for Flow Theme
         //'pswithdrawalform.tpl'  => 'proudsourcing/psWithdrawalForm/application/views/azure/tpl/page/info/pswithdrawalform.tpl',
+        // for Flow Theme
+        'pswithdrawalform.tpl'  => 'proudsourcing/psWithdrawalForm/application/views/flow/tpl/page/info/pswithdrawalform.tpl',
 
     ),
     'blocks' => array(
