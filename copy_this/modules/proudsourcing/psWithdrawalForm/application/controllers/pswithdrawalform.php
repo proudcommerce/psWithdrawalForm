@@ -132,7 +132,6 @@ class psWithdrawalForm extends oxUBase
         }
         return $this->_oCaptcha;
     }
-
     /**
      * Template variable getter. Returns status if email was send succesfull
      *
